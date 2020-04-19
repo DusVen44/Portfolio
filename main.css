@@ -23,16 +23,16 @@ h1 {
 .top-name {
     border: 1px solid black;
     font-family: 'Cormorant SC', serif;
-    font-size: 25px;
+    font-size: 10vw;
     font-weight: 500;
-    text-shadow: -2px -2px 1px black;
+    text-shadow: -4px -4px 1px black;
     text-align: center;
     margin: 0;
 }
 
 .bar {
     color: #66FCF1;
-    font-size: 30px;
+    font-size: 40px;
 }
 
 ul {
@@ -45,23 +45,25 @@ ul {
 }
 
 li {
+    font-family: 'Cormorant SC', serif;
+    font-size: 5vw;
     border: 1px solid black;
-    text-shadow: -2px -2px 1px black;
+    text-shadow: -4px -4px 1px black;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: -5px;
 }
 
 .headline-container {
     background-color: rgb(50, 50, 50);
-    background-image: url("images/crop-moon.png");
-    background-size: 80%;
+    background-image: url("images/moon-clouds.png");
+    background-size: 90%;
     background-repeat: no-repeat;
-    background-position: right bottom;
-    text-shadow: -1px -1px 1px black;
+    background-position: 100% 14%;
     height: 100vh;
     padding-bottom: 20px;
-    padding-top: 35%;
+    padding-top: 60vh;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -71,29 +73,63 @@ h1 {
     font-size: 50px;
     font-weight: 500;
     margin-bottom: 50px;
-    text-shadow: -2px -2px 1px black;
+    text-shadow: -6px 6px 4px black;
 }
 
 h2 {
     font-size: 35px;
     margin-bottom: 50px;
-    text-shadow: -3px -3px 2px black;
+    text-shadow: -2px 4px 2px black;
 }
 
 h3 {
     font-size: 20px;
-    text-shadow: -4px -4px 3px black;
+    text-shadow: -2px 3px 0px black;
 }
 
 .bio-container {
-    background-color: gray;
-    height: 200px;
-    text-align: center;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(50,50,50,1) 100%);
+    text-align: left;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 716px;
+}
+
+.bio-title {
+    font-family: 'Cormorant SC', serif;
+    text-decoration: underline;
+    font-size: 50px;
+    text-shadow: -1px 3px 0px black;
+    align-self: center;
+    padding-bottom: 20px;
+}
+
+p {
+    margin-bottom: 20px;
+    text-shadow: -1px 2px 0px black;
+}
+
+.project-container {
+    background-color: black;
+}
+
+.project-title {
+    font-family: 'Cormorant SC', serif;
+    text-decoration: underline;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.project-name {
+    font-size: 25px;
+    text-decoration: underline solid #66FCF1;
 }
 
 .project-info-container {
-    background-color: lightblue;
-    height: 200px;
+    background-color: black;
     text-align: center;
 }
 
