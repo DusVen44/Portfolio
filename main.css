@@ -103,7 +103,7 @@ h3 {
     text-align: center;
 }
 
-@media screen and (min-width: 376px) {
+@media screen and (min-width: 415px) {
     nav {
         position: relative;
     }
