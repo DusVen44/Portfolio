@@ -264,7 +264,7 @@ footer {
     font-size: 8px;
 }
 
-@media screen and (min-width: 415px) and (min-height: 897px) {
+@media screen and (min-width: 767px) and (min-height: 1023px) {
     nav {
         position: fixed;
         height: 80px;
