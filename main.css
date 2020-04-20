@@ -46,6 +46,11 @@ ul {
     align-items: center;
 }
 
+a {
+    text-decoration: none;
+    font-family: 'Cormorant SC', serif;
+}
+
 li {
     font-family: 'Cormorant SC', serif;
     font-size: 5vw;
@@ -94,7 +99,7 @@ h3 {
     padding: 5vw;
     display: flex;
     flex-direction: column;
-    height: 85vh;
+    height: 100vh;
 }
 
 .bio-title {
@@ -103,6 +108,7 @@ h3 {
     font-size: 8vh;
     text-shadow: -1px 3px 0px black;
     align-self: center;
+    padding-top: 10vh;
     padding-bottom: 20px;
 }
 
@@ -124,6 +130,7 @@ h3 {
     font-size: 8vh;
     display: flex;
     justify-content: center;
+    padding-top: 10vh;
     padding-bottom: 20px;
 }
 
@@ -187,7 +194,7 @@ button {
 
 .contact-container {
     background: linear-gradient(to top, #BC2909, #BA6D09, #71A8EE, #3072EB, #1552C6, #0542A8);
-    height: 80vh;
+    height: 90vh;
     text-align: center;
     padding: 20px;
     position: relative;
@@ -198,6 +205,7 @@ button {
     font-family: 'Cormorant SC', serif;
     text-decoration: underline;
     font-size: 8vh;
+    padding-top: 10vh;
     padding-bottom: 20px;
     text-shadow: 1px -3px 1px black;
 }
@@ -307,14 +315,14 @@ footer {
         position: absolute;
         width: 50%;
         left: 0;
-        top: 20vh;  
+        top: 28vh;  
     }
 
     .project-info {
         position: absolute;
         width: 50%;
         right: 0;
-        top: 20vh;
+        top: 28vh;
         padding-left: 4%;
         padding-right: 4%;
         font-size: 1.5vh;
@@ -324,20 +332,21 @@ footer {
         position: absolute;
         width: 50%;
         left: 0;
+        top: 31vh
     }
 
     .buttons {
         position: absolute;
         width: 50%;
         left: 0;
-        top: 28vh;
+        top: 35vh;
     }
 
     .project-screenshot {
         position: absolute;
         width: 60%;
         left: 20%;
-        top: 38vh;
+        top: 47vh;
     }
 
     .contact-container {
@@ -348,8 +357,9 @@ footer {
         font-size: 3vh;
     }
 
-    .contact-options {
-        font-size: 1.8vh;
+    h5 a {
+        font-size: 25px;
+        font-weight: 500;
     }
 
     .sun {
@@ -371,6 +381,16 @@ footer {
 
     li {
         font-size: 32px;
+        height: 50px;
+        margin-bottom: -14px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    li:hover {
+        cursor: pointer;
+        background-color: rgba(102, 252, 242, 0.5);
+        transition: .3s;
     }
 
     .headline-container {
@@ -441,12 +461,35 @@ footer {
         position: static;
     }
 
+    .button {
+        height: 40px;
+        font-size: 18px;
+    }
+
+    .button:hover {
+        cursor: pointer;
+    }
+
+    .button-site:hover {
+        background-color: rgb(102, 252, 242);
+        transition: .3s;
+        color: black;
+        font-weight: 900;
+    }
+
+    .button-code:hover {
+        background-color: rgb(234, 0, 255);
+        transition: .3s;
+        color: black;
+        font-weight: 900;
+    }
+
     .project-screenshot {
         position: absolute;
         width: 40%;
         max-width: 700px;
         left: 50%;
-        top: 25vh;
+        top: 35vh;
     }
 
     .contact-container {
