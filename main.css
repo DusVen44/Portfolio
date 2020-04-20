@@ -152,6 +152,7 @@ h3 {
 button {
     width: 30%;
     margin-top: 3vh;
+    margin-bottom: 1.5vh;
 }
 
 .button-site {
@@ -176,7 +177,6 @@ button {
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 30px;
-    margin-top: -3vh;
     text-align: center;
 }
 
@@ -264,7 +264,7 @@ footer {
     font-size: 8px;
 }
 
-@media screen and (min-width: 415px) {
+@media screen and (min-width: 415px) and (min-height: 897px) {
     nav {
         position: fixed;
         height: 80px;
@@ -362,7 +362,7 @@ footer {
     }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 769px) and (min-height: 1025px) {
     .top-name {
         font-size: 55px;
         margin-left: 3%;
