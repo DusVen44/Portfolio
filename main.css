@@ -15,8 +15,9 @@ nav {
     align-items: center;
     width: 100%;
     height: 11vh;
-    padding: 5px;
+    padding-top: .1vh;
     border-bottom: 1px solid #66FCF1;
+    box-shadow: 0px;
     z-index: 1;
 }
 
@@ -39,8 +40,8 @@ h1 {
 
 ul {
     list-style: none;
-    margin-top: 10px;
-    margin-bottom: 5px;
+    margin-top: 1.1vh;
+    margin-bottom: 1vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -89,35 +90,37 @@ h3 {
 .bio-container {
     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(50,50,50,1) 100%);
     text-align: left;
-    padding: 20px;
+    padding: 10vw;
     display: flex;
     flex-direction: column;
-    height: 800px;
+    height: 85vh;
 }
 
 .bio-title {
     font-family: 'Cormorant SC', serif;
     text-decoration: underline;
-    font-size: 50px;
+    font-size: 8vh;
     text-shadow: -1px 3px 0px black;
     align-self: center;
     padding-bottom: 20px;
 }
 
-p {
-    margin-bottom: 20px;
+.bio-text {
     text-shadow: -1px 2px 0px black;
     line-height: 1.6;
+    font-size: 1.6vh;
+    padding-bottom: 5vh;
 }
 
 .project-container {
     background: linear-gradient(0deg, rgba(5,66,168,1) 0%, rgba(0,0,0,1) 25%);
+    padding-top: 50px;
 }
 
 .project-title {
     font-family: 'Cormorant SC', serif;
     text-decoration: underline;
-    font-size: 50px;
+    font-size: 8vh;
     display: flex;
     justify-content: center;
     padding-bottom: 20px;
@@ -126,17 +129,20 @@ p {
 .project-name {
     font-size: 25px;
     text-decoration: underline solid #66FCF1;
+    margin-bottom: 1vh;
 }
 
 .project-info-container {
     background-color: black;
     text-align: center;
-    padding: 20px;
+    padding: 10vw;
 }
 
 .project-info {
-    font-size: 15px;
+    font-size: 1.6vh;
     text-align: left;
+    line-height: 1.2;
+    margin-bottom: 2vh;
 }
 
 .diff {
@@ -145,6 +151,7 @@ p {
 
 button {
     width: 30%;
+    margin-top: 1vh;
 }
 
 .button-site {
@@ -169,6 +176,7 @@ button {
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 30px;
+    margin-top: -3vh;
     text-align: center;
 }
 
@@ -179,16 +187,17 @@ button {
 
 .contact-container {
     background: linear-gradient(to top, #BC2909, #BA6D09, #71A8EE, #3072EB, #1552C6, #0542A8);
-    height: 740px;
+    height: 80vh;
     text-align: center;
     padding: 20px;
     position: relative;
+    overflow: hidden;
 }
 
 .contact-title {
     font-family: 'Cormorant SC', serif;
     text-decoration: underline;
-    font-size: 50px;
+    font-size: 8vh;
     padding-bottom: 20px;
     text-shadow: 1px -3px 1px black;
 }
