@@ -250,6 +250,7 @@ h5 {
     position: absolute;
     width: 70%;
     right: -25%;
+    bottom: 25%;
     pointer-events: none;
 }
 
@@ -284,6 +285,26 @@ footer p>a {
 
 footer a {
     text-decoration: underline;
+}
+
+/*CSS for iPhone 6S Vertical View*/
+@media screen and (max-height: 667px) {
+    .top-name, .bar {
+        font-size: 23px;
+    }
+
+    .cloud {
+        width: 50%;
+        right: -20%;
+    }
+
+    .sun {
+        bottom: -30%;
+    }
+
+    .tree {
+        width: 40%;
+    }
 }
 
 @media screen and (min-width: 767px) and (min-height: 1023px) {
