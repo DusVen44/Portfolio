@@ -6,6 +6,7 @@
     color: rgb(255, 255, 255);
 }
 
+/*CSS for modern mobile devices*/
 nav {
     background-image: linear-gradient(rgb(0, 0, 0), rgb(50, 50, 50));
     position: fixed;
@@ -134,7 +135,7 @@ h3 {
     padding-bottom: 20px;
 }
 
-h5 {
+h6 {
     font-size: 25px;
     text-decoration: underline solid #66FCF1;
     margin-bottom: 1vh;
@@ -287,10 +288,167 @@ footer a {
     text-decoration: underline;
 }
 
-/*CSS for iPhone 6S Vertical View*/
-@media screen and (max-height: 667px) {
+/*CSS for mobile and tablet Horizonal View*/
+@media screen and (min-width: 667px) and (max-height: 800px) {
+    nav {
+        height: 6vw;
+    }
+    
     .top-name, .bar {
-        font-size: 23px;
+        font-size: 4vw;
+    }
+
+    .top-name {
+        position: absolute;
+        left: 5%;
+        bottom: 0%;
+    }
+
+    ul {
+        position: absolute;
+        right: 5%;
+        bottom: 0;
+    }
+
+    li {
+        font-size: 2.5vw;
+    }
+
+    .headline-container {
+        background-size: 20%;
+        background-position: 105% 10%;
+    }
+
+    h1 {
+        font-size: 7vw;
+        font-weight: 500;
+        margin-bottom: 3vw;
+    }
+    
+    h2 {
+        font-size: 5vw;
+        margin-bottom: 3vw;
+    }
+    
+    h3 {
+        font-size: 2.7vw;
+    }
+
+    .title {
+        font-size: 7vw;
+        padding-top: 3vh;
+    }
+
+    .bio-text {
+        font-size: 1.75vw;
+    }
+
+    .project-container {
+        position: relative;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .project-info-container {
+        min-height: 90vw;
+    }
+
+    .project-name {
+        position: absolute;
+        width: 50%;
+        left: 0;
+        top: 25vw;
+    }
+
+    .project-info {
+        position: absolute;
+        width: 50%;
+        top: 30vw;
+        left: 0;
+        padding-left: 4%;
+        padding-right: 4%;
+        font-size: 1.6vw;
+    }
+
+    .tech {
+        position: absolute;
+        width: 50%;
+        left: 0;
+        top: 45vw;
+    }
+
+    .logo {
+        width: 7vw;
+    }
+
+    .buttons {
+        position: absolute;
+        width: 50%;
+        left: 0;
+        top: 54vw;
+    }
+
+    .button {
+        font-size: 18px;
+        padding: 1vw 2vw;
+    }
+
+    .project-screenshot {
+        position: absolute;
+        width: 40%;
+        max-width: 700px;
+        left: 52%;
+        top: 25vw;
+    }
+
+    .contact-container {
+        min-height: 95vh;
+    }
+
+    .contact-title {
+        padding-top: 4vw;
+    }
+
+    .name-title {
+        font-size: 3vw;
+    }
+
+    .contact-options {
+        font-size: 1.8vh;
+    }
+
+    .link {
+        text-shadow: 7px -5px 4px black;
+    }
+
+    .sun {
+        left: -12%;
+        width: 30%;
+        bottom: -28%;
+    }
+
+    .cloud {
+        width: 30%;
+        right: -7%;
+        bottom: 50%;
+    }
+
+    .tree {
+        width: 20%;
+        height: 32%;
+        bottom: -2%;
+    }
+
+    footer {
+        height: 50px;
+    }
+
+}
+
+/*CSS for iPhone 6S Vertical View*/
+@media screen and (max-width: 375px) and (max-height: 667px) {
+    .top-name, .bar {
+        font-size: 5vh;
     }
 
     .cloud {
@@ -307,17 +465,17 @@ footer a {
     }
 }
 
-@media screen and (min-width: 767px) and (min-height: 1023px) {
+/*CSS for tablet Vertical View*/
+@media screen and (min-width: 768px) and (max-width: 800px) and (min-height: 1024px) {
     nav {
-        position: fixed;
-        height: 80px;
+        height: 70px;
     }
 
     .top-name {
         position: absolute;
         font-size: 45px;
         bottom: 0px;
-        left: 2px;
+        left: 10px;
         text-shadow: -6px -4px 1px black;
     }
 
@@ -329,7 +487,7 @@ footer a {
 
     li {
         float: right;
-        font-size: 22px;
+        font-size: 23px;
         text-shadow: -1px -4px 1px black;
     }
 
@@ -367,21 +525,21 @@ footer a {
         position: absolute;
         width: 50%;
         left: 0;
-        top: 31vh
+        top: 32vh
     }
 
     .buttons {
         position: absolute;
         width: 50%;
         left: 0;
-        top: 35vh;
+        top: 38vh;
     }
 
     .project-screenshot {
         position: absolute;
         width: 60%;
         left: 20%;
-        top: 47vh;
+        top: 44vh;
     }
 
     .contact-container {
@@ -403,15 +561,32 @@ footer a {
     }
 
     .tree {
-        width: 40%;
+        width: 30%;
+    }
+
+    footer {
+        font-size: 14px;
     }
 }
 
-@media screen and (min-width: 769px) and (min-height: 1025px) {
+/*CSS for Laptop/Desktop*/
+@media screen and (min-width: 1281px) { 
+    nav {
+        height: 70px;
+    }
+    
     .top-name {
+        position: absolute;
         font-size: 55px;
-        margin-left: 3%;
         text-shadow: -10px -4px 1px black;
+        left: 5%;
+        bottom: 0;
+    }
+
+    ul {
+        position: absolute;
+        right: 5%;
+        bottom: 0;
     }
 
     li {
@@ -424,8 +599,8 @@ footer a {
 
     li:hover {
         cursor: pointer;
-        background-color: rgba(102, 252, 242, 0.5);
-        transition: .3s;
+        background-color: rgba(102, 252, 242, 0.774);
+        transition: .5s;
     }
 
     .headline-container {
@@ -465,40 +640,67 @@ footer a {
         padding-left: 7%;
         padding-right: 7%;
     }
-    
+
     .project-container {
         position: relative;
-        padding-left: 5%;
-        padding-right: 5%;
+        padding-left: 10%;
+        padding-right: 10%;
     }
 
     .project-info-container {
-        min-height: 95vh;
+        min-height: 90vw;
     }
 
-    .project-title {
-        font-size: 100px;
+    h6 {
+        font-size: 45px;
     }
 
     .project-name {
-        position: static;
+        position: absolute;
+        width: 50%;
+        left: 0;
+        top: 25vw;
     }
 
     .project-info {
-        position: static;
+        position: absolute;
+        width: 50%;
+        top: 30vw;
+        left: 0;
+        padding-left: 4%;
+        padding-right: 4%;
+        font-size: 1.2vw;
     }
 
     .tech {
-        position: static;
+        position: absolute;
+        width: 50%;
+        left: 0;
+        top: 40vw;
+    }
+
+    .logo {
+        width: 5vw;
     }
 
     .buttons {
-        position: static;
+        position: absolute;
+        width: 50%;
+        left: 0;
+        top: 47vw;
     }
 
     .button {
-        height: 40px;
-        font-size: 18px;
+        font-size: 30px;
+        padding: .5vw 4vw;
+    }
+
+    .project-screenshot {
+        position: absolute;
+        width: 40%;
+        max-width: 700px;
+        left: 55%;
+        top: 25vw;
     }
 
     .button:hover {
@@ -519,14 +721,6 @@ footer a {
         font-weight: 900;
     }
 
-    .project-screenshot {
-        position: absolute;
-        width: 40%;
-        max-width: 700px;
-        left: 50%;
-        top: 35vh;
-    }
-
     .contact-container {
         min-height: 90vh;
     }
@@ -536,27 +730,35 @@ footer a {
     }
 
     .name-title {
-        font-size: 3vh;
+        font-size: 2.5vw;
     }
 
-    .contact-options {
-        font-size: 1.8vh;
+    h5 a {
+        font-size: 2vw;
+        text-decoration: underline;
+        text-shadow: 7px -4px 4px black;
     }
 
     .sun {
+        width: 40%;
         left: -150px;
         width: 600px;
-        bottom: 80px;
+        bottom: -50px;
     }
 
     .cloud {
         width: 600px;
+        right: 0%;
     }
 
     .tree {
         width: 400px;
-        height: 275px;
-        bottom: -14px;
+        height: 300px;
+        bottom: -16px;
+    }
+
+    footer {
+        font-size: 16px;
     }
 
 }
