@@ -466,7 +466,7 @@ footer a {
 }
 
 /*CSS for tablet Vertical View*/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (min-height: 1000px) {
     nav {
         height: 70px;
     }
@@ -496,26 +496,35 @@ footer a {
         background-size: 35%;
     }
 
+    .bio-title {
+        padding-top: 7vw;
+        padding-bottom: 7vw;
+    }
+
+    .bio-text {
+        font-size: 2vw;
+    }
+
     .project-container {
         position: relative;
     }
 
     .project-info-container {
-        min-height: 90vh;
+        min-height: 100vh;
     }
 
     .project-name {
         position: absolute;
         width: 50%;
         left: 0;
-        top: 28vh;  
+        top: 28vw;  
     }
 
     .project-info {
         position: absolute;
         width: 50%;
-        right: 0;
-        top: 28vh;
+        left: 50%;
+        top: 28vw;
         padding-left: 4%;
         padding-right: 4%;
         font-size: 1.5vh;
@@ -525,21 +534,21 @@ footer a {
         position: absolute;
         width: 50%;
         left: 0;
-        top: 32vh
+        top: 34vw;
     }
 
     .buttons {
         position: absolute;
         width: 50%;
         left: 0;
-        top: 38vh;
+        top: 41vw;
     }
 
     .project-screenshot {
         position: absolute;
         width: 60%;
         left: 20%;
-        top: 44vh;
+        top: 49vw;
     }
 
     .contact-container {
@@ -561,7 +570,8 @@ footer a {
     }
 
     .tree {
-        width: 30%;
+        width: 25%;
+        height: 30%;
     }
 
     footer {
