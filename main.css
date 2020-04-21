@@ -249,21 +249,22 @@ h5 {
 .cloud {
     position: absolute;
     width: 70%;
+    right: -25%;
     pointer-events: none;
 }
 
 .sun {
     position: absolute;
     width: 90%;
-    left: -110px;
-    bottom: -35px;
+    left: -30%;
+    bottom: -20%;
     pointer-events: none;
 }
 
 .tree {
     position: absolute;
-    right: 2px;
-    bottom: -8px;
+    right: 0%;
+    bottom: -1%;
     width: 50%;
     height: 20%;
     pointer-events: none;
@@ -274,6 +275,7 @@ footer {
     background-size: cover;
     height: 60px;
     font-size: 13px;
+    padding-left: 10px;
 }
 
 footer p>a {
