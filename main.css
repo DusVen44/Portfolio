@@ -289,7 +289,7 @@ footer a {
 }
 
 /*CSS for mobile and tablet Horizonal View*/
-@media screen and (min-width: 667px) {
+@media screen and (min-width: 640px) {
     nav {
         height: 6vw;
     }
@@ -446,7 +446,7 @@ footer a {
 }
 
 /*CSS for iPhone 6S Vertical View*/
-@media screen and (max-width: 375px) {
+@media screen and (min-width: 350px) {
     .top-name, .bar {
         font-size: 5vh;
     }
